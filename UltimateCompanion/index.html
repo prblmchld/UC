@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World!</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+<html> 
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+   
+     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+     <link href="styles/logoimages.css" rel="stylesheet" />
+    <link href="styles/pinterest-style.css" rel="stylesheet" />
+    <link href="styles/flexslider.css" rel="stylesheet" />
+	<link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+	<link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+     
+     <script src="cordova.js"></script>
+       <script src="scripts/jquery-1.10.2.min.js"></script>
+     <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/index.js"></script>
+     <script src="scripts/login.js"></script>
+       <script src="scripts/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="scripts/freewall.js"></script>
+    
+</head>
+<body>
+    <div data-role="layout" data-id="main">
+        <div data-role="header" >
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+
+        <!-- application views will be rendered here -->
+        
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="views/home.html" data-icon="home">Home</a>   
+                <a href="views/chapters.html" data-icon="bookmarks">Chapters</a>
+            <!--    <a href="views/birds.html" data-icon="favorites">Birds</a> -->
+                <a href="views/about.html" data-icon="compose">About</a>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
